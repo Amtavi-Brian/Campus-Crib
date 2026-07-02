@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Crib</title>
+
+```
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="submission/css/styles.css">
+<link rel="icon" href="images/logo.jpg">
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#Home">
+                <img src="submission/images/logo.jpg" alt="Campus Crib Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Rooms">Rooms</a></li>
+            <li><a href="#Booking">Booking</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <button id="themeToggle" class="theme-btn">
+            🌙 Dark Mode
+        </button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HOME SECTION -->
+    <section id="Home">
+
+        <div class="banner-container">
+
+            <img src="submission/images/home.jpeg"
+                alt="Hostel Image"
+                class="home-image"
+                id="bannerImage">
+
+            <div id="bannerInfo" class="hidden-banner">
+
+                <h3>Campus Crib</h3>
+
+                <p>
+                    We help students find secure,
+                    affordable and verified hostels
+                    near their campus.
+                </p>
+
+            </div>
+
+        </div>
+
+        <h1>FIND YOUR <strong>PERFECT HOSTEL</strong></h1>
+
+        <p>
+            <strong>Comfortable. Secure. Affordable.</strong>
+        </p>
+
+        <p>
+            Discover the best hostels with great facilities
+            at prices you'll love.
+        </p>
+
+        <div class="buttons">
+            <a href="#Rooms" class="btn">Explore Rooms</a>
+            <a href="#Booking" class="btn">Book Now</a>
+        </div>
+
+    </section>
+
+    <!-- ROOMS SECTION -->
+    <section id="Rooms">
+
+        <h2>FEATURED HOSTELS</h2>
+
+        <!-- Dynamic content rendered by JavaScript -->
+        <div id="hostelContainer"></div>
+
+        <!-- Wishlist Section -->
+        <div class="wishlist-section">
+
+            <h2>My Hostel Wishlist</h2>
+
+            <p>
+                Add hostels you'd like to consider later.
+            </p>
+
+            <input
+                type="text"
+                id="wishlistInput"
+                placeholder="Enter hostel name">
+
+            <button id="addWishlist">
+                Add Hostel
+            </button>
+
+            <ul id="wishlist"></ul>
+
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="Why">
+
+            <h2>WHY CHOOSE US?</h2>
+
+            <div class="reasons">
+
+                <div class="reason">
+                    <img src="submission/images/shield.svg" alt="Secure Booking">
+
+                    <h3>Secure Booking</h3>
+
+                    <p>
+                        Your booking is safe and protected.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <img src="submission/images/prices.svg" alt="Affordable Prices">
+
+                    <h3>Affordable Prices</h3>
+
+                    <p>
+                        Best prices that fit your budget.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <img src="submission/images/verified.svg" alt="Verified Hostels">
+
+                    <h3>Verified Hostels</h3>
+
+                    <p>
+                        All hostels are verified and trusted.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <img src="submission/images/support.svg" alt="24/7 Support">
+
+                    <h3>24/7 Support</h3>
+
+                    <p>
+                        We are always ready to help.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="Booking">
+
+        <h2>Book Your Room</h2>
+
+        <form id="bookingForm">
+
+            <label for="name">Full Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name">
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email">
+
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone">
+
+            <label for="room_type">Select Room Type:</label>
+
+            <select id="room_type" name="room_type">
+                <option value="">--Select a Room Type--</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="hostel">Select Hostel:</label>
+
+            <select id="hostel" name="hostel">
+                <option value="">--Select a Hostel--</option>
+                <option value="parallel_four">
+                    Parallel Four Hostels
+                </option>
+                <option value="qwetu">
+                    Qwetu Hostel
+                </option>
+                <option value="kafoca">
+                    Kafoca Hostel
+                </option>
+            </select>
+
+            <p id="savedHostel"></p>
+
+            <label for="checkin">Check-in Date:</label>
+
+            <input
+                type="date"
+                id="checkin"
+                name="checkin">
+
+            <label for="duration_unit">
+                Select Stay Duration:
+            </label>
+
+            <select
+                id="duration_unit"
+                name="duration_unit">
+
+                <option value="">
+                    --Select Duration--
+                </option>
+
+                <option value="3_months">
+                    3 Months
+                </option>
+
+                <option value="6_months">
+                    6 Months
+                </option>
+
+                <option value="12_months">
+                    12 Months
+                </option>
+
+            </select>
+
+            <button type="submit" id="bookingBtn">
+                Confirm Booking
+            </button>
+
+        </form>
+
+        <p id="bookingFeedback"></p>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="Contact">
+
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+
+            <p>
+                <img src="submission/images/location.svg" alt="Location Icon">
+                <strong>Nairobi, Kenya</strong>
+                Ole Sangale Campus
+            </p>
+
+            <p>
+                <img src="submission/images/email.svg" alt="Email Icon">
+                <strong>info@hostelbooking.com</strong>
+                We reply within 24 hours
+            </p>
+
+            <p>
+                <img src="submission/images/call.svg" alt="Phone Icon">
+                <strong>+254 798 68 53 92</strong>
+                Mon - Sun: 8:00AM - 8:00PM
+            </p>
+
+            <p>
+                <img src="submission/images/internet.svg" alt="Internet Icon">
+                <strong>www.hostelbooking.com</strong>
+                Visit our website for more information
+            </p>
+
+            <p>
+                <a href="https://wa.me/254798685392"
+                    target="_blank">
+
+                    <img src="submission/images/whatsapp.svg"
+                        alt="WhatsApp Icon">
+
+                </a>
+
+                Contact Us Via WhatsApp
+            </p>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div id="contact-form">
+
+            <h3>Send Us a Message</h3>
+
+            <form id="messageForm">
+
+                <label for="contact-name">
+                    Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="contact-name"
+                    name="name">
+
+                <label for="contact-email">
+                    Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="contact-email"
+                    name="email">
+
+                <label for="message">
+                    Message:
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message..."></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p id="messageFeedback"></p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <a href="#Home">
+        <img src="submission/images/logo.jpg"
+            alt="Campus Crib Logo"
+            class="footer-logo">
+    </a>
+
+    <ul class="footer-links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Rooms">Rooms</a></li>
+        <li><a href="#Booking">Booking</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+
+    <p>
+        &copy; 2026 Campus Crib.
+        All rights reserved.
+    </p>
+
+</footer>
+
+<script src="submission/js/script.js"></script>
+
+</body>
+
+</html>
