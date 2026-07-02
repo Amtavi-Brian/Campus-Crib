@@ -678,32 +678,20 @@ nav {
 }
 
 /* Dark Mode Support */
-body.dark-mode {
-    background: #0F172A;
-    color: #F8FAFC;
-}
-
-body.dark-mode header,
-body.dark-mode .reason,
-body.dark-mode .wishlist-section,
-body.dark-mode form,
-body.dark-mode .contact-info,
-body.dark-mode #contact-form,
-body.dark-mode .hostel-card {
-    background: #1E293B;
+.dark-mode {
+    background-color: #222;
     color: white;
 }
 
-body.dark-mode input,
-body.dark-mode select,
-body.dark-mode textarea {
-    background: #334155;
+.dark-mode header,
+.dark-mode section,
+.dark-mode footer {
+    background-color: #333;
     color: white;
-    border-color: #475569;
 }
 
-body.dark-mode footer {
-    background: #020617;
+.dark-mode a {
+    color: #4da6ff;
 }
 
 /* Responsive Adjustments */
