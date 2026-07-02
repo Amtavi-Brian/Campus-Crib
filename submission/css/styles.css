@@ -186,7 +186,16 @@ text-align: center;
 margin-bottom: 40px;
 font-size: 2rem;
 }
-
+.theme-btn {
+    background: var(--primary-blue);
+    color:rgb(190, 190, 214);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
 .image {
 display: inline-block;
 width: 31%;
@@ -492,7 +501,7 @@ nav {
 
 .theme-btn {
     background: var(--primary-blue);
-    color: white;
+    color:rgb(66, 66, 199);
     border: none;
     padding: 12px 18px;
     border-radius: 10px;
@@ -679,8 +688,8 @@ nav {
 
 /* Dark Mode Support */
 .dark-mode {
-    background-color: #222;
-    color: white;
+    background-color: var(--dark-text);
+    color: var(--dark-text);
 }
 
 .dark-mode header,
@@ -689,9 +698,18 @@ nav {
     background-color: #333;
     color: white;
 }
+.dark-mode p{
+color:#0c203f;
+}
 
 .dark-mode a {
     color: #4da6ff;
+}
+.dark-mode h3{
+color: var(--dark-text);
+}
+.dark-mode label{
+    color: #0c203f;
 }
 
 /* Responsive Adjustments */
