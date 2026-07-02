@@ -705,8 +705,11 @@ color:#0c203f;
 .dark-mode a {
     color: #4da6ff;
 }
-.dark-mode h3{
+.dark-mode  h3{
 color: var(--dark-text);
+}
+.dark-mode h3{
+color: dark;
 }
 .dark-mode label{
     color: #0c203f;
