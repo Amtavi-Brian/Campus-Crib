@@ -143,3 +143,7 @@ messageForm.addEventListener("submit", event=> {
 
     messageForm.reset();
 });
+
+window.addEventListener("load", () => {
+    alert("Welcome to our Student Hostel Website!");
+});

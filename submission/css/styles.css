@@ -695,7 +695,7 @@ nav {
 .dark-mode header,
 .dark-mode section,
 .dark-mode footer {
-    background-color: #333;
+    background-color: #080808;
     color: white;
 }
 .dark-mode p{
@@ -705,8 +705,8 @@ color:#0c203f;
 .dark-mode a {
     color: #4da6ff;
 }
-.dark-mode  h3{
-color: var(--dark-text);
+.dark-mode  h2{
+color: var(--dark-blue);
 }
 .dark-mode h3{
 color: dark;
