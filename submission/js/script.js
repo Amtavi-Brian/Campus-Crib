@@ -76,3 +76,37 @@ bookingForm.addEventListener("submit", event=>{
    bookingFeedback.style.color = "green";
    bookingForm.reset();
 });
+
+let hostels = [
+    {
+        name: "Sunrise Hostel",
+        location: "Nairobi",
+        price: "KSH 8000 /MONTH",
+        
+    },
+    {
+        name: "Sunset Hostel",
+        location: "Mombasa",
+        price: "KSH 9000 /MONTH",
+        
+    },
+    {
+        name: "Ocean View Hostel",
+        location: "Malindi",
+        price: "KSH 10000 /MONTH",
+        
+    }
+];
+
+let hostelContainer = document.querySelector("#hostelContainer");
+
+hostels.forEach(hostel=>{
+    let card = document.createElement("div");
+    card.classList.add("hostel-card");
+
+    card.innerHTML =`
+    <h3>${hostel.name}</h3>
+    <p>Location: ${hostel.location}</p>
+    <p>Price: ${hostel.price}</p>`;
+    hostelContainer.appendChild(card);
+});
