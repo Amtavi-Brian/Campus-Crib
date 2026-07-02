@@ -115,7 +115,7 @@ hostels.forEach(hostel=>{
 let messageForm = document.querySelector("#messageForm");
 let messageFeedback = document.querySelector("#messageFeedback");
 
-messageForm.addEventListener("submit", function(event) {
+messageForm.addEventListener("submit", event=> {
 
     event.preventDefault();
 

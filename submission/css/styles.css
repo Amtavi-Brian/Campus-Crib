@@ -529,7 +529,7 @@ nav {
     left: 20px;
     right: 20px;
 
-    background: rgba(13, 94, 244, 0.92);
+    background: rgba(183, 193, 211, 0.92);
     color: white;
 
     padding: 20px;
@@ -551,7 +551,7 @@ nav {
 }
 
 .hidden-banner p {
-    color: white;
+    color: rgb(15, 8, 8);
     margin: 0;
 }
 
