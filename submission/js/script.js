@@ -111,7 +111,7 @@ messageForm.addEventListener("submit", event=> {
     messageForm.reset();
 });
 
-// 
+// Loop rendered dunamic contente
 
 let hostels = [
     {
