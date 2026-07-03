@@ -12,13 +12,13 @@ let themeToggle = document.querySelector("#themeToggle");
 themeToggle.addEventListener("click", event => {
     let isDark = document.body.classList.toggle("dark-mode");
 
-    if (isDark) {
-        localStorage.setItem("theme", "dark");
-        themeToggle.textContent = "🌙 Dark Mode";
-    } else {
-        localStorage.setItem("theme", "light");
-        themeToggle.textContent = "☀️ Light Mode";
-    }
+   if (isDark) {
+    localStorage.setItem("theme", "dark");
+    themeToggle.textContent = "☀️ Light Mode";
+} else {
+    localStorage.setItem("theme", "light");
+    themeToggle.textContent = "🌙 Dark Mode";
+}
 });   
 
 
@@ -131,6 +131,22 @@ let hostels = [
         location: "Malindi",
         price: "KSH 10000 /MONTH",
         
+    },
+    {
+        name: "Imperial Hostel",
+        location: "Kisumu",
+        price: "KSH 11000 /MONTH",
+        
+    },
+    {
+        name: "Royal Hostel",
+        location: "Nakuru",
+        price: "KSH 12000 /MONTH",
+    },
+    {
+        name: "Greenfield Hostel",
+        location: "Eldoret",
+        price: "KSH 13000 /MONTH",
     }
 ];
 
@@ -145,4 +161,29 @@ hostels.forEach(hostel=>{
     <p>Location: ${hostel.location}</p>
     <p>Price: ${hostel.price}</p>`;
     hostelContainer.appendChild(card);
+});
+
+
+// Hostel Search Functionality
+let searchHostel =
+    document.querySelector("#searchHostel");
+
+searchHostel.addEventListener("input", () => {
+
+    let search =
+        searchHostel.value.toLowerCase();
+
+    let cards =
+        document.querySelectorAll(".hostel-card");
+
+    cards.forEach(card => {
+
+        let text =
+            card.textContent.toLowerCase();
+
+        card.style.display =
+            text.includes(search)
+            ? "block"
+            : "none";
+    });
 });
