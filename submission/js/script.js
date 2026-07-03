@@ -77,3 +77,36 @@ bookingForm.addEventListener("submit", event=>{
    bookingFeedback.style.color = "green";
    bookingForm.reset();
 });
+
+// Second form validation
+let messageForm = document.querySelector("#messageForm");
+let messageFeedback = document.querySelector("#messageFeedback");
+
+messageForm.addEventListener("submit", event=> {
+
+    event.preventDefault();
+
+    let name =
+        document.querySelector("#contact-name").value.trim();
+
+    let email =
+        document.querySelector("#contact-email").value.trim();
+
+    let message =
+        document.querySelector("#message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+
+        messageFeedback.textContent =
+            "Please fill in all fields before submitting.";
+
+        return;
+    }
+
+    messageFeedback.innerHTML =
+        "<strong>Message Sent Successfully!</strong><br>" +
+        "Name: " + name + "<br>" +
+        "Email: " + email;
+
+    messageForm.reset();
+});
