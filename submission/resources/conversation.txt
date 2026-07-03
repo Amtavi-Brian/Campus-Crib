@@ -1,5 +1,0 @@
-I was able to interview a friend, Karen Nyambura, who is a BCOM student at Strathmore University. During our discussion, she explained that many students face challenges when looking for hostel accommodation because they often have to visit the university physically before securing a room. This process can be time-consuming and expensive.
-
-Karen suggested the idea of a hostel booking website that would allow students to view and book hostels online before arriving at the university. The website would display different hostels available around the university, together with their facilities and prices, enabling students to make informed decisions easily.
-
-Based on this idea, I developed a simple hostel booking website for visualization purposes. The website is designed to help students find suitable accommodation quickly and conveniently, saving both time and money. It is especially useful for students coming from different parts of Kenya and from other countries, since Strathmore University is an international institution that attracts students from across the world.
